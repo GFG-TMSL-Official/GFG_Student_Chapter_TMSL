@@ -50,7 +50,7 @@ const TeamMember: React.FC<TeamMember> = ({ name, role, image, github, linkedin,
 const Team = () => {
   const teamMembers: TeamMember[] = [
     {
-      name: 'Alex Johnson',
+      name: 'Arin Karmakar',
       role: 'Chapter Lead',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
       github: 'https://github.com',
@@ -66,7 +66,7 @@ const Team = () => {
       email: 'sm2.cse.tmsl@ticollege.org'
     },
     {
-      name: 'Michael Kumar',
+      name: 'Saranya',
       role: 'Event Coordinator',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
       github: 'https://github.com',
@@ -74,7 +74,7 @@ const Team = () => {
       email: 'michael@example.com'
     },
     {
-      name: 'Emily Rodriguez',
+      name: 'Aditya Seth',
       role: 'Content Lead',
       image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
       github: 'https://github.com',
