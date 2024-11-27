@@ -44,7 +44,7 @@ const Contact = () => {
               <div>
                 <h3 className="text-lg font-medium text-gray-900">Email</h3>
                 <a href="mailto:contact@gfgtmsl.com" className="mt-1 text-gray-600 hover:text-green-600">
-                  contact@gfgtmsl.com
+                  gfg.tmsl.tech@gmail.com
                 </a>
               </div>
             </div>
@@ -58,7 +58,7 @@ const Contact = () => {
               <div>
                 <h3 className="text-lg font-medium text-gray-900">Phone</h3>
                 <a href="tel:+919876543210" className="mt-1 text-gray-600 hover:text-green-600">
-                  +91 98765 43210
+                  +91 98765 4321
                 </a>
               </div>
             </div>
