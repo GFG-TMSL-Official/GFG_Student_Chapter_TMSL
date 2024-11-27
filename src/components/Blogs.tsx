@@ -20,7 +20,7 @@ const Blogs = () => {
       title: 'Getting Started with Data Structures',
       excerpt: 'Learn the fundamentals of data structures and their implementations in various programming languages.',
       author: {
-        name: 'Alex Johnson',
+        name: 'Arin Karmakar',
         image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80'
       },
       date: 'March 15, 2024',
@@ -32,7 +32,7 @@ const Blogs = () => {
       title: 'Web Development Best Practices',
       excerpt: 'Explore modern web development practices and improve your coding skills with these essential tips.',
       author: {
-        name: 'Sarah Chen',
+        name: 'Chandan Kumar Raj',
         image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80'
       },
       date: 'March 18, 2024',
@@ -44,7 +44,7 @@ const Blogs = () => {
       title: 'Introduction to System Design',
       excerpt: 'Understanding the basics of system design and architecture for building scalable applications.',
       author: {
-        name: 'Michael Kumar',
+        name: 'Samyak Mishra',
         image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80'
       },
       date: 'March 20, 2024',
