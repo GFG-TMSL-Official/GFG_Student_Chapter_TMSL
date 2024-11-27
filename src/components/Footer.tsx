@@ -110,7 +110,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Technical Team GFG Student Chapter TMSL. All rights reserved.
+            © {new Date().getFullYear()} Technical Team GFG TMSL. All rights reserved.
           </p>
           <button
             onClick={scrollToTop}
