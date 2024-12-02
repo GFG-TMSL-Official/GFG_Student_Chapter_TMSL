@@ -4,11 +4,9 @@ import './Preloader.css';
 const Preloader: React.FC = () => {
     const [text, setText] = useState('');
     const loadingMessages = [
-        'Initializing...',
-        'Compiling Modules...',
-        'Connecting to Server...',
-        'Loading Resources...',
+    'Welcome to the World of Tech !',
     ];
+
     const [messageIndex, setMessageIndex] = useState(0);
 
     useEffect(() => {
