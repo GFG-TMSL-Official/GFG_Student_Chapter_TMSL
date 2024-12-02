@@ -165,7 +165,7 @@ const Team = () => {
     {
       name: 'Pragya Saha',
       role: 'Marketing Co Lead',
-      image: 'https://i.postimg.cc/kgLBjVsQ/Pragya.jpg',
+      image: 'https://i.postimg.cc/MKtgyNxR/Pragya-1.jpg',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com',
       email: 'sasha156julla@gmail.com'
