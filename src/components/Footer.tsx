@@ -26,10 +26,10 @@ const Footer = () => {
               <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+              <a href="https://www.linkedin.com/company/gfgtmsl/posts/?feedView=all" className="text-gray-400 hover:text-green-400 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+              <a href="https://github.com/GFG-TMSL-Official" className="text-gray-400 hover:text-green-400 transition-colors">
                 <Github className="h-5 w-5" />
               </a>
             </div>
@@ -65,7 +65,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+                <a href="https://drive.google.com/drive/folders/1zz05OGzZD6qbSkVDFlPM3abceeSfeBhN?usp=sharing" className="text-gray-400 hover:text-green-400 transition-colors">
                   Study Material
                 </a>
               </li>
