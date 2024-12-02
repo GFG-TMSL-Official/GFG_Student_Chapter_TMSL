@@ -69,7 +69,7 @@ const Team = () => {
     {
       name: 'Samyak Mishra',
       role: 'Technical Lead',
-      image: 'https://i.postimg.cc/50SyNsVg/Samyak.jpg',
+      image: 'https://i.postimg.cc/CKwYFkFH/Samyak.jpg',
       github: 'https://github.com/Samyak072',
       linkedin: 'https://www.linkedin.com/in/samyak072/',
       email: 'sm2.cse.tmsl@ticollege.org'
