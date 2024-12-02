@@ -8,33 +8,31 @@ const Preloader: React.FC = () => {
 
     useEffect(() => {
         let typingIndex = 0;
-        let isTyping = true; // Track typing state
 
         const typeEffect = () => {
-            if (isTyping) {
-                if (typingIndex < loadingMessages[messageIndex].length) {
-                    setText((prev) => prev + loadingMessages[messageIndex][typingIndex]);
-                    typingIndex++;
-                } else {
-                    isTyping = false;
-                    setTimeout(() => {
-                        isTyping = true;
-                        setText('');
-                        typingIndex = 0;
-
-                        // Only increment the message index if there is more than one message
-                        if (loadingMessages.length > 1) {
-                            setMessageIndex((prev) => (prev + 1) % loadingMessages.length);
-                        }
-                    }, 1000); // Pause before resetting text
-                }
+            if (typingIndex < loadingMessages[messageIndex].length) {
+                // Add the next character to the text
+                setText((prev) => prev + loadingMessages[messageIndex][typingIndex]);
+                typingIndex++;
+            } else {
+                // Pause after completing the message
+                setTimeout(() => {
+                    setText(''); // Clear the text
+                    typingIndex = 0; // Reset typing index
+                    // Only change the messageIndex if there are multiple messages
+                    if (loadingMessages.length > 1) {
+                        setMessageIndex((prev) => (prev + 1) % loadingMessages.length);
+                    }
+                }, 1000); // 1-second pause
             }
         };
 
-        const typingInterval = setInterval(typeEffect, 100);
+        // Start typing effect
+        const typingInterval = setInterval(typeEffect, 150);
 
+        // Clean up the interval on component unmount
         return () => clearInterval(typingInterval);
-    }, [messageIndex, loadingMessages]);
+    }, [messageIndex]);
 
     return (
         <div className="preloader">
