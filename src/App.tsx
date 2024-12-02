@@ -15,19 +15,16 @@ const App: React.FC = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Simulate loading delay
-        const timer = setTimeout(() => {
-            setLoading(false);
-        }, 3000); // Adjust loading time as needed
+        const timer = setTimeout(() => setLoading(false), 4000); // Simulate 3-second loading
         return () => clearTimeout(timer);
     }, []);
 
     return (
-        <>
+        <div>
             {loading ? (
                 <Preloader />
             ) : (
-                <div className="min-h-screen bg-gray-50">
+                <>
                     <Navbar />
                     <Hero />
                     <About />
@@ -38,9 +35,9 @@ const App: React.FC = () => {
                     <Blogs />
                     <Contact />
                     <Footer />
-                </div>
+                </>
             )}
-        </>
+        </div>
     );
 };
 
