@@ -15,12 +15,15 @@ const App: React.FC = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const timer = setTimeout(() => setLoading(false), 2000); // Simulate loading time
+        // Simulate loading delay
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 3000); // Adjust loading time as needed
         return () => clearTimeout(timer);
     }, []);
 
     return (
-        <div>
+        <>
             {loading ? (
                 <Preloader />
             ) : (
@@ -37,7 +40,7 @@ const App: React.FC = () => {
                     <Footer />
                 </div>
             )}
-        </div>
+        </>
     );
 };
 
