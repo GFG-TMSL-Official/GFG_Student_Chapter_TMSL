@@ -77,7 +77,7 @@ const Team = () => {
     {
       name: 'Suprakash Roy',
       role: 'Technical Co Lead',
-      image: 'https://i.postimg.cc/L6bXXqrc/Suprakash.jpg',
+      image: 'https://i.postimg.cc/KvFy7tTX/Suprakash-1.jpg',
       github: 'https://github.com/SuprakashRoy04',
       linkedin: 'https://www.linkedin.com/in/suprakash-roy-28361b247/',
       email: 'suprakash.05roy@gmail.com'
