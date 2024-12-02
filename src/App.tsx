@@ -15,7 +15,7 @@ const App: React.FC = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const timer = setTimeout(() => setLoading(false), 4000); // Simulate 3-second loading
+        const timer = setTimeout(() => setLoading(false), 3000); 
         return () => clearTimeout(timer);
     }, []);
 
