@@ -100,7 +100,8 @@ const Team = () => {
     {
       name: 'Aditya Seth',
       role: 'Event Lead',
-      image: 'src/images/Aditya.jpg',
+      image: 'https://i.postimg.cc/3dk0kmBR/Aditya.jpg',
+      //<img src="https://i.postimg.cc/3dk0kmBR/Aditya.jpg" alt="Aditya"/>
       github: 'https://github.com/AdityaSeth777',
       linkedin: 'https://www.linkedin.com/in/aditya-seth-270833233/',
       email: 'contact@adityaseth.in'
