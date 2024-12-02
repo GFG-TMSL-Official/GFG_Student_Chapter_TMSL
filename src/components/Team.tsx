@@ -52,19 +52,19 @@ const Team = () => {
   const teamMembers: TeamMember[] = [
     {
       name: 'Arin Karmakar',
-      role: 'Chapter Lead',
+      role: 'Chairperson',
       image: 'https://i.postimg.cc/rwDDCG1y/Arin.jpg',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com/in/arin-karmakar-7758a8204/',
-      email: 'gmail.com'
+      email: 'arinkarmakar3@gmail.com'
     },
     {
       name: 'Chandan Kumar Raj',
-      role: 'Chapter Co Lead',
+      role: 'Vice Chairperson',
       image: 'https://i.postimg.cc/7YsC2tTQ/Chandan.jpg',
       github: 'https://github.com/chandan0629',
       linkedin: 'https://www.linkedin.com/in/chandan-kumar-raj-210839210/',
-      email: 'alex@example.com'
+      email: 'ckr11042004@gmail.com'
     },
     {
       name: 'Samyak Mishra',
@@ -76,7 +76,7 @@ const Team = () => {
     },
     {
       name: 'Suprakash Roy',
-      role: 'Technical Co Lead',
+      role: 'Technical Lead Associate',
       image: 'https://i.postimg.cc/KvFy7tTX/Suprakash-1.jpg',
       github: 'https://github.com/SuprakashRoy04',
       linkedin: 'https://www.linkedin.com/in/suprakash-roy-28361b247/',
@@ -92,7 +92,7 @@ const Team = () => {
     },
     {
       name: 'Rhitwika Poddar',
-      role: 'Design Co Lead',
+      role: 'Design Lead Associate',
       image: 'https://i.postimg.cc/rmkzkvvz/Rhitwika.jpg',
       github: 'https://github.com',
       linkedin: 'https://linkedin.com',
@@ -108,7 +108,7 @@ const Team = () => {
     },
     {
       name: 'Arnab Singha',
-      role: 'Event Co Lead',
+      role: 'Event Lead Associate',
       image: 'https://i.postimg.cc/6qz8zYbq/Arnab.webp',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com',
@@ -124,7 +124,7 @@ const Team = () => {
     },
     {
       name: 'Arghya Dandopat',
-      role: 'Social Media Co Lead',
+      role: 'Social Media Lead Associate',
       image: 'https://i.postimg.cc/SQGYyxQ4/Arghya.jpg',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com',
@@ -140,7 +140,7 @@ const Team = () => {
     },
     {
       name: 'Suhani Kundu',
-      role: 'PR Co Lead',
+      role: 'PR Lead Associate',
       image: 'https://i.postimg.cc/PrxJTbFb/Suhani.jpg',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com/in/suhani-kundu-110104267/',
@@ -156,7 +156,7 @@ const Team = () => {
     },
     {
       name: 'Abu Huzaifa Luqmani',
-      role: 'Marketing Co Lead',
+      role: 'Marketing Lead Associate',
       image: 'https://i.postimg.cc/qqJjqBNF/Huzaifa-1.jpg',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com',
@@ -164,7 +164,7 @@ const Team = () => {
     },
     {
       name: 'Pragya Saha',
-      role: 'Marketing Co Lead',
+      role: 'Marketing Lead Associate',
       image: 'https://i.postimg.cc/MKtgyNxR/Pragya-1.jpg',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com',
