@@ -35,19 +35,19 @@ const Hero = () => {
         
         <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-8">
           <div className="text-center">
-            <h3 className="text-3xl font-bold text-green-600">500+</h3>
+            <h3 className="text-3xl font-bold text-green-600">25+</h3>
             <p className="text-gray-600">Active Members</p>
           </div>
           <div className="text-center">
-            <h3 className="text-3xl font-bold text-green-600">50+</h3>
+            <h3 className="text-3xl font-bold text-green-600"></h3>
             <p className="text-gray-600">Events Conducted</p>
           </div>
           <div className="text-center">
-            <h3 className="text-3xl font-bold text-green-600">100+</h3>
+            <h3 className="text-3xl font-bold text-green-600">5+</h3>
             <p className="text-gray-600">Projects Completed</p>
           </div>
           <div className="text-center">
-            <h3 className="text-3xl font-bold text-green-600">1000+</h3>
+            <h3 className="text-3xl font-bold text-green-600">100+</h3>
             <p className="text-gray-600">Problems Solved</p>
           </div>
         </div>
