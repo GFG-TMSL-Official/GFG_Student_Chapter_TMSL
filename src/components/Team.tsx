@@ -54,8 +54,8 @@ const Team = () => {
       role: 'Chapter Lead',
       image: 'h',
       github: 'https://github.com',
-      linkedin: 'https://linkedin.com',
-      email: 'alex@example.com'
+      linkedin: 'https://www.linkedin.com/in/arin-karmakar-7758a8204/',
+      email: 'gmail.com'
     },
     {
       name: 'Chandan Kumar Raj',
@@ -73,7 +73,7 @@ const Team = () => {
       linkedin: 'https://www.linkedin.com/in/samyak072/',
       email: 'sm2.cse.tmsl@ticollege.org'
     },
-        {
+    {
       name: 'Suprakash Roy',
       role: 'Technical Co Lead',
       image: 'image-url',
