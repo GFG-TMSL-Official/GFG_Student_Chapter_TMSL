@@ -76,7 +76,7 @@ const Team = () => {
     {
       name: 'Suprakash Roy',
       role: 'Technical Co Lead',
-      image: 'src/images/Suprakash.jpg',
+      image: 'https://i.postimg.cc/L6bXXqrc/Suprakash.jpg',
       github: 'https://github.com/SuprakashRoy04',
       linkedin: 'https://www.linkedin.com/in/suprakash-roy-28361b247/',
       email: 'suprakash.05roy@gmail.com'
@@ -141,7 +141,7 @@ const Team = () => {
     {
       name: 'Suhani Kundu',
       role: 'PR Co Lead',
-      image: 'src/images/Suhani.jpg',
+      image: 'https://i.postimg.cc/PrxJTbFb/Suhani.jpg',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com/in/suhani-kundu-110104267/',
       email: 'suhanikundu.2004@gmail.com'
