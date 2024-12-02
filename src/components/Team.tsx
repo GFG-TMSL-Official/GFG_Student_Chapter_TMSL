@@ -52,7 +52,7 @@ const Team = () => {
     {
       name: 'Arin Karmakar',
       role: 'Chapter Lead',
-      image: '../images/Arin.jpg',
+      image: 'src/images/Arin.jpg',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com/in/arin-karmakar-7758a8204/',
       email: 'gmail.com'
