@@ -39,7 +39,7 @@ const Hero = () => {
             <p className="text-gray-600">Active Members</p>
           </div>
           <div className="text-center">
-            <h3 className="text-3xl font-bold text-green-600"></h3>
+            <h3 className="text-3xl font-bold text-green-600">2+</h3>
             <p className="text-gray-600">Events Conducted</p>
           </div>
           <div className="text-center">
