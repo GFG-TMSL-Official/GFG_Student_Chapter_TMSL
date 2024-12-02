@@ -17,7 +17,7 @@ const TeamMember: React.FC<TeamMember> = ({ name, role, image, github, linkedin,
         src={image}
         alt={name}
         className="w-full h-64 object-cover object-center transition-transform duration-300 group-hover:scale-110"
-        style={{ height: '1900px', width: '1100px' }}
+        style={{ height: '300px', width: '300px' }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <div className="absolute bottom-0 left-0 right-0 p-4">
