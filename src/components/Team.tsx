@@ -1,21 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
-import ArinImage from '../images/Arin.jpg';
-import ChandanImage from '../images/Chandan.jpg';
-import SamyakImage from '../images/Samyak.jpg';
-import SuprakashImage from '../images/Suprakash.jpg';
-import SaranyaImage from '../images/Saranya.jpg';
-import RhitwikaImage from '../images/Rhitwika.jpg';
-import AdityaImage from '../images/Aditya.jpg';
-import ArnabImage from '../images/Arnab.webp';
-import RahulImage from '../images/Rahul.JPG';
-import ArghyaImage from '../images/Arghya.jpg';
-import ShamikImage from '../images/Shamik.jpg';
-import SuhaniImage from '../images/Suhani.jpg';
-import AtyankushImage from '../images/Atyankush.jpg';
-import HuzaifaImage from '../images/Huzaifa.jpg';
-import PragyaImage from '../images/Pragya.jpg';
 interface TeamMember {
   name: string;
   role: string;
@@ -115,7 +100,7 @@ const Team = () => {
     {
       name: 'Aditya Seth',
       role: 'Event Lead',
-      image: '../images/Aditya.jpg',
+      image: 'https://drive.google.com/uc?export=view&id=1ehpdAr1JFTeFIXxp8s-5vEdLoepMqWEk',
       github: 'https://github.com/AdityaSeth777',
       linkedin: 'https://www.linkedin.com/in/aditya-seth-270833233/',
       email: 'contact@adityaseth.in'
