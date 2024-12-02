@@ -157,7 +157,7 @@ const Team = () => {
     {
       name: 'Abu Huzaifa Luqmani',
       role: 'Marketing Co Lead',
-      image: 'https://i.postimg.cc/MpfGj6wv/Huzaifa.jpg',
+      image: 'https://i.postimg.cc/qqJjqBNF/Huzaifa-1.jpg',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com',
       email: 'huzaifaluqmani13@gmail.com'
