@@ -150,7 +150,7 @@ const Team = () => {
     {
       name: 'Atyankush Das',
       role: 'Marketing Lead',
-      image: 'src/images/Atyankush.jpg',
+      image: 'https://i.postimg.cc/CL7m30nr/Atyankush.jpg',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com',
       email: 'atyankushd@gmail.com'
