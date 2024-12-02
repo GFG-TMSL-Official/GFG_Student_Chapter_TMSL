@@ -52,7 +52,7 @@ const Team = () => {
     {
       name: 'Arin Karmakar',
       role: 'Chapter Lead',
-      image: 'h',
+      image: '../images/Arin.jpg',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com/in/arin-karmakar-7758a8204/',
       email: 'gmail.com'
@@ -60,7 +60,7 @@ const Team = () => {
     {
       name: 'Chandan Kumar Raj',
       role: 'Chapter Co Lead',
-      image: 'h',
+      image: '../images/Chandan.jpg',
       github: 'https://github.com/chandan0629',
       linkedin: 'https://www.linkedin.com/in/chandan-kumar-raj-210839210/',
       email: 'alex@example.com'
@@ -68,7 +68,7 @@ const Team = () => {
     {
       name: 'Samyak Mishra',
       role: 'Technical Lead',
-      image: 'image-url',
+      image: '../images/Samyak.jpg',
       github: 'https://github.com/Samyak072',
       linkedin: 'https://www.linkedin.com/in/samyak072/',
       email: 'sm2.cse.tmsl@ticollege.org'
@@ -76,7 +76,7 @@ const Team = () => {
     {
       name: 'Suprakash Roy',
       role: 'Technical Co Lead',
-      image: 'image-url',
+      image: '../images/Suprakash.jpg',
       github: 'https://github.com/SuprakashRoy04',
       linkedin: 'https://www.linkedin.com/in/suprakash-roy-28361b247/',
       email: 'suprakash.05roy@gmail.com'
@@ -84,7 +84,7 @@ const Team = () => {
     {
       name: 'Saranya Adhikary',
       role: 'Design Lead',
-      image: 'image',
+      image: '../images/Saranya.jpg',
       github: 'https://github.com',
       linkedin: 'https://linkedin.com',
       email: 'saranyaemailme@gmail.com'
@@ -92,7 +92,7 @@ const Team = () => {
     {
       name: 'Rhitwika Poddar',
       role: 'Design Co Lead',
-      image: 'image',
+      image: '../images/Rhitwika.jpg',
       github: 'https://github.com',
       linkedin: 'https://linkedin.com',
       email: 'rhitwikapoddar@gmail.com'
@@ -100,7 +100,7 @@ const Team = () => {
     {
       name: 'Aditya Seth',
       role: 'Event Lead',
-      image: 'image',
+      image: '../images/Aditya.jpg',
       github: 'https://github.com/AdityaSeth777',
       linkedin: 'https://www.linkedin.com/in/aditya-seth-270833233/',
       email: 'contact@adityaseth.in'
@@ -108,7 +108,7 @@ const Team = () => {
     {
       name: 'Arnab Singha',
       role: 'Event Co Lead',
-      image: 'image',
+      image: '../images/Arnab.webp',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com',
       email: 'singhaarnab007@gmail.com'
@@ -116,7 +116,7 @@ const Team = () => {
     {
       name: 'Rahul Deb',
       role: 'Social Media Lead',
-      image: 'image',
+      image: '../images/Rahul.JPG',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com',
       email: 'rdeb97412@gmail.com'
@@ -124,7 +124,7 @@ const Team = () => {
     {
       name: 'Arghya Dandopat',
       role: 'Social Media Co Lead',
-      image: 'image',
+      image: '../images/Arghya.jpg',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com',
       email: 'dandapatarghya71@gmail.com'
@@ -132,7 +132,7 @@ const Team = () => {
     {
       name: 'Shamik Ghosh',
       role: 'PR Lead',
-      image: 'image',
+      image: '../images/Shamik.jpg',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com',
       email: 'shamikghoshxd@gmail.com'
@@ -140,7 +140,7 @@ const Team = () => {
     {
       name: 'Suhani Kundu',
       role: 'PR Co Lead',
-      image: 'image',
+      image: '../images/Suhani.jpg',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com/in/suhani-kundu-110104267/',
       email: 'suhanikundu.2004@gmail.com'
@@ -148,7 +148,7 @@ const Team = () => {
     {
       name: 'Atyankush Das',
       role: 'Marketing Lead',
-      image: 'image',
+      image: '../images/Atyankush.jpg',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com',
       email: 'atyankushd@gmail.com'
@@ -156,7 +156,7 @@ const Team = () => {
     {
       name: 'Abu Huzaifa Luqmani',
       role: 'Marketing Co Lead',
-      image: 'image',
+      image: '../images/Huzaifa.jpg',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com',
       email: 'huzaifaluqmani13@gmail.com'
@@ -164,7 +164,7 @@ const Team = () => {
     {
       name: 'Pragya Saha',
       role: 'Marketing Co Lead',
-      image: 'image',
+      image: '../images/Pragya.jpg',
       github: 'https://github.com',
       linkedin: 'https://www.linkedin.com',
       email: 'sasha156julla@gmail.com'
