@@ -58,29 +58,118 @@ const Team = () => {
       email: 'alex@example.com'
     },
     {
+      name: 'Chandan Kumar Raj',
+      role: 'Chapter Co Lead',
+      image: 'h',
+      github: 'https://github.com/chandan0629',
+      linkedin: 'https://www.linkedin.com/in/chandan-kumar-raj-210839210/',
+      email: 'alex@example.com'
+    },
+    {
       name: 'Samyak Mishra',
       role: 'Technical Lead',
       image: 'image-url',
-      github: 'https://github.com',
-      linkedin: 'https://linkedin.com',
+      github: 'https://github.com/Samyak072',
+      linkedin: 'https://www.linkedin.com/in/samyak072/',
       email: 'sm2.cse.tmsl@ticollege.org'
     },
+        {
+      name: 'Suprakash Roy',
+      role: 'Technical Co Lead',
+      image: 'image-url',
+      github: 'https://github.com/SuprakashRoy04',
+      linkedin: 'https://www.linkedin.com/in/suprakash-roy-28361b247/',
+      email: 'suprakash.05roy@gmail.com'
+    },
     {
-      name: 'Saranya',
-      role: 'Event Coordinator',
+      name: 'Saranya Adhikary',
+      role: 'Design Lead',
       image: 'image',
       github: 'https://github.com',
       linkedin: 'https://linkedin.com',
-      email: 'michael@example.com'
+      email: 'saranyaemailme@gmail.com'
+    },
+    {
+      name: 'Rhitwika Poddar',
+      role: 'Design Co Lead',
+      image: 'image',
+      github: 'https://github.com',
+      linkedin: 'https://linkedin.com',
+      email: 'rhitwikapoddar@gmail.com'
     },
     {
       name: 'Aditya Seth',
-      role: 'Content Lead',
+      role: 'Event Lead',
+      image: 'image',
+      github: 'https://github.com/AdityaSeth777',
+      linkedin: 'https://www.linkedin.com/in/aditya-seth-270833233/',
+      email: 'contact@adityaseth.in'
+    },
+    {
+      name: 'Arnab Singha',
+      role: 'Event Co Lead',
       image: 'image',
       github: 'https://github.com',
-      linkedin: 'https://linkedin.com',
-      email: 'emily@example.com'
+      linkedin: 'https://www.linkedin.com',
+      email: 'singhaarnab007@gmail.com'
+    },
+    {
+      name: 'Rahul Deb',
+      role: 'Social Media Lead',
+      image: 'image',
+      github: 'https://github.com',
+      linkedin: 'https://www.linkedin.com',
+      email: 'rdeb97412@gmail.com'
+    },
+    {
+      name: 'Arghya Dandopat',
+      role: 'Social Media Co Lead',
+      image: 'image',
+      github: 'https://github.com',
+      linkedin: 'https://www.linkedin.com',
+      email: 'dandapatarghya71@gmail.com'
+    },
+    {
+      name: 'Shamik Ghosh',
+      role: 'PR Lead',
+      image: 'image',
+      github: 'https://github.com',
+      linkedin: 'https://www.linkedin.com',
+      email: 'shamikghoshxd@gmail.com'
+    },
+    {
+      name: 'Suhani Kundu',
+      role: 'PR Co Lead',
+      image: 'image',
+      github: 'https://github.com',
+      linkedin: 'https://www.linkedin.com/in/suhani-kundu-110104267/',
+      email: 'suhanikundu.2004@gmail.com'
+    },
+    {
+      name: 'Atyankush Das',
+      role: 'Marketing Lead',
+      image: 'image',
+      github: 'https://github.com',
+      linkedin: 'https://www.linkedin.com',
+      email: 'atyankushd@gmail.com'
+    },
+    {
+      name: 'Abu Huzaifa Luqmani',
+      role: 'Marketing Co Lead',
+      image: 'image',
+      github: 'https://github.com',
+      linkedin: 'https://www.linkedin.com',
+      email: 'huzaifaluqmani13@gmail.com'
+    },
+    {
+      name: 'Pragya Saha',
+      role: 'Marketing Co Lead',
+      image: 'image',
+      github: 'https://github.com',
+      linkedin: 'https://www.linkedin.com',
+      email: 'sasha156julla@gmail.com'
     }
+    
   ];
 
   return (
