@@ -4,7 +4,7 @@ import './Preloader.css';
 const Preloader: React.FC = () => {
     const [text, setText] = useState('');
     const loadingMessages = [
-    'WELCOME TO THE TECH WORLD !',
+    'Welcome Geeks !',
     ];
 
     const [messageIndex, setMessageIndex] = useState(0);
