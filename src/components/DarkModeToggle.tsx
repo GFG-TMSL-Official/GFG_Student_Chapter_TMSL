@@ -1,27 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const DarkModeToggle: React.FC = () => {
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(
-    localStorage.getItem('theme') === 'dark'
+  const [darkMode, setDarkMode] = useState<boolean>(
+    () => document.body.classList.contains('dark')
   );
 
-  useEffect(() => {
-    const root = window.document.documentElement;
-    if (isDarkMode) {
-      root.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
+  const toggleDarkMode = () => {
+    if (darkMode) {
+      document.body.classList.remove('dark');
     } else {
-      root.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
+      document.body.classList.add('dark');
     }
-  }, [isDarkMode]);
+    setDarkMode(!darkMode);
+  };
 
   return (
     <button
-      onClick={() => setIsDarkMode((prev) => !prev)}
-      className="p-2 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+      className="dark-mode-toggle"
+      onClick={toggleDarkMode}
+      aria-label="Toggle dark mode"
     >
-      {isDarkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
+      {darkMode ? (
+        <span className="dark-mode-icon">🌙</span> // Moon icon for dark mode
+      ) : (
+        <span className="dark-mode-icon">☀️</span> // Sun icon for light mode
+      )}
     </button>
   );
 };
