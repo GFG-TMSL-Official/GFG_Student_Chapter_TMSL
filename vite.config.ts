@@ -5,6 +5,11 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
-    exclude: ['lucide-react'],
+    exclude: ['lucide-react', 'emailjs-com'], // Exclude emailjs-com from optimization
+  },
+  build: {
+    rollupOptions: {
+      external: ['emailjs-com'], // Mark emailjs-com as an external dependency
+    },
   },
 });
