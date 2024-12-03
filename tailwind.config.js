@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         primary: '#007bff', // Custom blue color
         secondary: '#6c757d', // Custom gray color
+        accent: "#34a853",
       },
     },
   },
