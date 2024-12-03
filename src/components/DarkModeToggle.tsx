@@ -8,8 +8,11 @@ const DarkModeToggle: React.FC = () => {
     const savedMode = localStorage.getItem('darkMode');
     if (savedMode) {
       setIsDarkMode(savedMode === 'true');
+      document.body.classList.toggle('dark', savedMode === 'true');
     } else {
-      setIsDarkMode(window.matchMedia('(prefers-color-scheme: dark)').matches);
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      setIsDarkMode(systemPrefersDark);
+      document.body.classList.toggle('dark', systemPrefersDark);
     }
   }, []);
 
@@ -18,20 +21,27 @@ const DarkModeToggle: React.FC = () => {
     const newMode = !isDarkMode;
     setIsDarkMode(newMode);
     localStorage.setItem('darkMode', newMode.toString());
-    if (newMode) {
-      document.body.classList.add('dark');
-    } else {
-      document.body.classList.remove('dark');
-    }
+    document.body.classList.toggle('dark', newMode);
   };
 
   return (
-    <button
-      onClick={toggleDarkMode}
-      className="p-2 rounded-lg bg-primary text-white dark:bg-darkPrimary dark:text-darkText"
-    >
-      {isDarkMode ? 'Light Mode' : 'Dark Mode'}
-    </button>
+    <div className="flex items-center justify-center p-4">
+      <button
+        onClick={toggleDarkMode}
+        aria-label={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+        className="p-3 rounded-lg bg-primary text-white dark:bg-darkPrimary dark:text-darkText hover:bg-secondary dark:hover:bg-darkText transition-all"
+      >
+        {isDarkMode ? (
+          <span role="img" aria-label="Sun Icon">
+            🌞 Light Mode
+          </span>
+        ) : (
+          <span role="img" aria-label="Moon Icon">
+            🌙 Dark Mode
+          </span>
+        )}
+      </button>
+    </div>
   );
 };
 
