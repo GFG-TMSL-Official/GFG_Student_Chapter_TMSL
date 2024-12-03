@@ -10,6 +10,7 @@ import Blogs from './components/Blogs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Preloader from './components/Preloader';
+import DarkModeToggle from './components/DarkModeToggle'; // Import the Dark Mode Toggle
 
 const App: React.FC = () => {
     const [loading, setLoading] = useState(true);
@@ -25,9 +26,12 @@ const App: React.FC = () => {
     }
 
     return (
-        <div className="bg-gray-50 min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col bg-gray-50 text-gray-800 dark:bg-darkBg dark:text-darkText">
             {/* Navbar */}
-            <Navbar />
+            <header className="p-4 flex justify-between items-center bg-primary dark:bg-darkPrimary text-white">
+                <Navbar />
+                <DarkModeToggle /> {/* Add the Dark Mode Toggle */}
+            </header>
 
             {/* Main Content */}
             <main className="flex-grow">
