@@ -7,47 +7,183 @@ body {
   @apply font-body text-secondary;
 }
 
-/* Dark mode styles */
+/* Dark Mode Styles */
 body.dark {
   @apply bg-darkBg text-darkText;
 }
 
-/* Navbar specific styles */
+/* Navbar Specific Styles */
 header {
   @apply bg-primary dark:bg-darkPrimary text-white;
 }
 
-/* Dark mode styles for components */
+/* Styling for Buttons */
 button {
-  @apply bg-primary text-white rounded-lg;
+  @apply bg-primary text-white rounded-lg px-6 py-3 transition-all duration-300 ease-in-out;
 }
+
 button:hover {
   @apply bg-secondary text-gray-900;
 }
+
 button.dark {
   @apply bg-darkPrimary text-darkText;
 }
+
 button.dark:hover {
-  @apply bg-darkText bg-secondary;
+  @apply bg-darkText text-darkPrimary;
 }
 
-/* Additional dark mode utilities */
+/* Links Styling */
 a {
-  @apply text-primary hover:text-secondary;
+  @apply text-primary hover:text-secondary transition-colors duration-300;
 }
+
 a.dark {
   @apply text-darkPrimary hover:text-darkText;
 }
 
-/* Styling for the hero section */
+/* Hero Section Styles */
 #home {
   @apply min-h-screen bg-gray-50 text-gray-800 dark:bg-darkBg dark:text-darkText;
 }
 
-/* Dark mode specific grid and other sections */
+/* Dark Mode for Grid and Layouts */
 .grid {
   @apply grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8;
 }
+
 .grid.dark {
   @apply gap-6;
+}
+
+/* Hero Section Specific Styles */
+.hero {
+  @apply bg-gradient-to-br from-gray-50 to-green-50 dark:from-darkBg dark:to-darkPrimary;
+}
+
+.hero h1 {
+  @apply text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-white;
+}
+
+.hero h2 {
+  @apply text-xl sm:text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300;
+}
+
+.hero p {
+  @apply text-gray-600 max-w-2xl dark:text-gray-200;
+}
+
+.hero button {
+  @apply bg-green-600 text-white dark:bg-green-700 dark:text-white hover:bg-green-700 dark:hover:bg-green-800;
+}
+
+.hero .stats {
+  @apply grid grid-cols-2 sm:grid-cols-4 gap-8 mt-16;
+}
+
+.hero .stats div {
+  @apply text-center;
+}
+
+.hero .stats h3 {
+  @apply text-3xl font-bold text-green-600 dark:text-green-400;
+}
+
+.hero .stats p {
+  @apply text-gray-600 dark:text-gray-300;
+}
+
+/* Preloader Styles */
+.preloader {
+  @apply flex justify-center items-center bg-primary h-screen;
+}
+
+.preloader .spinner {
+  @apply border-4 border-t-transparent border-white rounded-full w-16 h-16 animate-spin;
+}
+
+/* Footer Styles */
+footer {
+  @apply bg-gray-800 text-white py-8;
+}
+
+footer .footer-links a {
+  @apply text-gray-400 hover:text-white transition-colors duration-300;
+}
+
+footer .footer-links a.dark {
+  @apply text-gray-300 hover:text-gray-200;
+}
+
+footer p {
+  @apply text-center text-gray-500 dark:text-gray-400;
+}
+
+/* Dark Mode for Specific Sections */
+section {
+  @apply bg-white text-black dark:bg-darkBg dark:text-darkText;
+}
+
+section h2 {
+  @apply text-3xl font-bold text-primary dark:text-darkPrimary;
+}
+
+section p {
+  @apply text-gray-600 dark:text-gray-300;
+}
+
+/* Dark Mode for Form Elements */
+input,
+textarea,
+select {
+  @apply bg-white text-black border border-gray-300 dark:bg-darkBg dark:text-darkText dark:border-darkText;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  @apply ring-2 ring-primary dark:ring-darkPrimary;
+}
+
+/* Dark Mode for Card Layouts */
+.card {
+  @apply bg-white shadow-lg rounded-lg p-4 transition-all duration-300 ease-in-out dark:bg-darkCard dark:text-darkText;
+}
+
+.card:hover {
+  @apply shadow-2xl transform scale-105 dark:shadow-2xl;
+}
+
+.card .card-title {
+  @apply text-xl font-bold text-primary dark:text-darkPrimary;
+}
+
+.card .card-body {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+/* Custom Tailwind Dark Mode Utility Classes */
+.dark .bg-darkPrimary {
+  background-color: #1A202C; /* Dark background */
+}
+
+.dark .text-darkText {
+  color: #D1D5DB; /* Light text color for dark mode */
+}
+
+.dark .bg-darkBg {
+  background-color: #121212; /* Dark background */
+}
+
+.dark .bg-darkCard {
+  background-color: #2D3748; /* Dark card background */
+}
+
+.dark .text-darkPrimary {
+  color: #4FD1C5; /* Dark primary color */
+}
+
+.dark .text-darkSecondary {
+  color: #CBD5E0; /* Light gray text for dark mode */
 }
