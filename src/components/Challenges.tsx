@@ -15,26 +15,26 @@ const Challenges = () => {
     {
       title: 'Algorithm Marathon',
       difficulty: 'Hard',
-      participants: 156,
-      duration: '3 hours',
-      deadline: 'March 30, 2024',
-      description: 'Test your algorithmic skills with complex problem-solving challenges.'
+      participants: ,
+      duration: 'Coming Soon',
+      deadline: 'Coming Soon',
+      description: 'Coming Soon'
     },
     {
       title: 'Web Dev Challenge',
       difficulty: 'Medium',
-      participants: 234,
-      duration: '4 hours',
-      deadline: 'April 5, 2024',
-      description: 'Build responsive and interactive web applications using modern technologies.'
+      participants: ,
+      duration: 'Coming Soon',
+      deadline: 'Coming Soon',
+      description: 'Coming Soon'
     },
     {
       title: 'Code Debug Sprint',
       difficulty: 'Easy',
-      participants: 312,
-      duration: '2 hours',
-      deadline: 'April 12, 2024',
-      description: 'Find and fix bugs in various programming languages and improve code quality.'
+      participants: ,
+      duration: 'Coming Soon',
+      deadline: 'Coming Soon',
+      description: 'Coming Soon'
     }
   ];
 
