@@ -2,6 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Apply global styles to the body */
 body {
   @apply font-body text-secondary;
+}
+
+/* Dark mode styles */
+body.dark {
+  @apply bg-darkBg text-darkText;
+}
+
+/* Navbar specific styles */
+header {
+  @apply bg-primary dark:bg-darkPrimary text-white;
+}
+
+/* Dark mode styles for components */
+button {
+  @apply bg-primary text-white rounded-lg;
+}
+button:hover {
+  @apply bg-secondary text-gray-900;
+}
+button.dark {
+  @apply bg-darkPrimary text-darkText;
+}
+button.dark:hover {
+  @apply bg-darkText bg-secondary;
+}
+
+/* Additional dark mode utilities */
+a {
+  @apply text-primary hover:text-secondary;
+}
+a.dark {
+  @apply text-darkPrimary hover:text-darkText;
+}
+
+/* Styling for the hero section */
+#home {
+  @apply min-h-screen bg-gray-50 text-gray-800 dark:bg-darkBg dark:text-darkText;
+}
+
+/* Dark mode specific grid and other sections */
+.grid {
+  @apply grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8;
+}
+.grid.dark {
+  @apply gap-6;
 }
