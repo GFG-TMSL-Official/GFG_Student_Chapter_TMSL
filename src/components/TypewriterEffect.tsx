@@ -27,5 +27,4 @@ const TypewriterEffect: React.FC<TypewriterEffectProps> = ({ text, className }) 
     </span>
   );
 };
-
 export default TypewriterEffect;
