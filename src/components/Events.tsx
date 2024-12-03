@@ -13,27 +13,27 @@ interface Event {
 const Events = () => {
   const events: Event[] = [
     {
-      title: 'Advanced DSA Workshop',
-      date: 'March 25, 2024',
-      time: '2:00 PM - 5:00 PM',
-      location: 'Lab 401, CS Building',
-      description: 'Deep dive into advanced data structures and algorithms with hands-on coding sessions.',
+      title: 'DSA Workshop',
+      date: 'Coming Soon',
+      time: 'Coming Soon',
+      location: 'Coming Soon',
+      description: 'Coming Soon',
       type: 'workshop'
     },
     {
       title: 'Web Development Bootcamp',
-      date: 'April 2, 2024',
-      time: '10:00 AM - 4:00 PM',
-      location: 'Virtual Event',
-      description: 'Comprehensive workshop on modern web development technologies and best practices.',
+      date: 'Coming Soon',
+      time: 'Coming Soon',
+      location: 'Coming Soon',
+      description: 'Coming Soon',
       type: 'webinar'
     },
     {
-      title: 'Code Sprint 2024',
-      date: 'April 15-16, 2024',
-      time: '9:00 AM onwards',
-      location: 'Main Auditorium',
-      description: '24-hour hackathon focused on building innovative solutions for real-world problems.',
+      title: 'Code Sprint ',
+      date: 'Coming Soon',
+      time: 'Coming Soon',
+      location: 'Coming Soon',
+      description: 'Coming Soon',
       type: 'hackathon'
     }
   ];
