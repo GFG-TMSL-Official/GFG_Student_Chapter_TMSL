@@ -12,35 +12,44 @@ const Footer = () => {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setMessage('');
+  e.preventDefault();
+  setIsSubmitting(true);
+  setMessage('');
 
-    // EmailJS configuration with proper template params
-    const templateParams = {
-      to_email: email, // Map the entered email to the template's "to_email" field
-    };
+  // Validate the input email
+  if (!email || !email.includes('@')) {
+    setMessage('Please enter a valid email address.');
+    setIsSubmitting(false);
+    return;
+  }
 
-    emailjs
-      .send(
-        'service_m5kgakp', // Replace with your actual service ID
-        'template_3y5carn', // Replace with your actual template ID
-        templateParams,
-        'yRBonteeeLpKxLi3W' // Replace with your public API key
-      )
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        setMessage('Thanks for Subscribing to our Newsletter!');
-        setEmail(''); // Clear the email input field
-      })
-      .catch((err) => {
-        console.error('FAILED...', err);
-        setMessage('Oops! Something went wrong, please try again.');
-      })
-      .finally(() => {
-        setIsSubmitting(false); // Re-enable the button
-      });
+  // EmailJS configuration with proper template params
+  const templateParams = {
+    to_email: email, // Map the entered email to the template's "to_email" field
+    to_name: email.split('@')[0], // Extract the username from the email (e.g., "abc" from "abc@gmail.com")
   };
+
+  emailjs
+    .send(
+      'service_m5kgakp', // Replace with your actual service ID
+      'template_3y5carn', // Replace with your actual template ID
+      templateParams,
+      'yRBonteeeLpKxLi3W' // Replace with your public API key
+    )
+    .then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      setMessage('Thanks for Subscribing to our Newsletter!');
+      setEmail(''); // Clear the email input field
+    })
+    .catch((err) => {
+      console.error('FAILED...', err);
+      setMessage('Oops! Something went wrong, please try again.');
+    })
+    .finally(() => {
+      setIsSubmitting(false); // Re-enable the button
+    });
+};
+
 
   return (
     <footer className="bg-gray-900 text-white">
