@@ -70,17 +70,17 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+                <a href="https://www.geeksforgeeks.org/explore?page=3&sortBy=submissions&itm_source=geeksforgeeks&itm_medium=main_header&itm_campaign=practice_header" className="text-gray-400 hover:text-green-400 transition-colors">
                   Practice Problems
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+                <a href="https://www.geeksforgeeks.org/explore?page=1&sortBy=submissions&itm_source=geeksforgeeks&itm_medium=main_header&itm_campaign=practice_header" className="text-gray-400 hover:text-green-400 transition-colors">
                   Interview Prep
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+                <a href="https://www.geeksforgeeks.org/geeksforgeeks-practice-best-online-coding-platform/?ref=ghm" className="text-gray-400 hover:text-green-400 transition-colors">
                   Coding Resources
                 </a>
               </li>
