@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Home, Code2 } from 'lucide-react';
+import { Menu, X, Code2 } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +14,11 @@ const Navbar = () => {
     { name: 'Blogs', href: '#blogs' },
     { name: 'Contact', href: '#contact' },
   ];
+
+  const handleJoinUsClick = () => {
+    // Redirect to the Google Form link
+    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLScEKj2oenCIpiH5hJMBKmWgMA9WPZl2YAfLUzak5Pwwc-QZkQ/viewform';
+  };
 
   return (
     <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 shadow-lg">
@@ -35,7 +40,10 @@ const Navbar = () => {
                   {item.name}
                 </a>
               ))}
-              <button className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition-all duration-300">
+              <button
+                onClick={handleJoinUsClick}
+                className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition-all duration-300"
+              >
                 Join Us
               </button>
             </div>
@@ -65,7 +73,10 @@ const Navbar = () => {
               {item.name}
             </a>
           ))}
-          <button className="w-full mt-2 bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">
+          <button
+            onClick={handleJoinUsClick}
+            className="w-full mt-2 bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700"
+          >
             Join Us
           </button>
         </div>
