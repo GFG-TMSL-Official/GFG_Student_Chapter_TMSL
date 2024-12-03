@@ -8,8 +8,8 @@ module.exports = {
         body: ['Open Sans', 'sans-serif'],
       },
       colors: {
-        primary: '#007bff', // Custom blue color
-        secondary: '#6c757d', // Custom gray color
+        primary: '#0f9d58', // Custom blue color
+        secondary: '#20232a', // Custom gray color
         accent: "#34a853",
       },
     },
