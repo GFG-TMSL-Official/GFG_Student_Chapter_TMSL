@@ -3,6 +3,9 @@ import { Code2, ArrowRight } from 'lucide-react';
 import TypewriterEffect from './TypewriterEffect';
 
 const Hero = () => {
+  // Google Form link
+  const googleFormLink = "https://forms.gle/d1buHabjbjqwxdjC8";
+
   return (
     <div id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-green-50 pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col items-center text-center">
@@ -24,7 +27,10 @@ const Hero = () => {
           innovation, and growth with like-minded tech enthusiasts.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <button className="px-8 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-all duration-300 flex items-center justify-center gap-2 group">
+          <button
+            onClick={() => window.open(googleFormLink, "_blank")}
+            className="px-8 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-all duration-300 flex items-center justify-center gap-2 group"
+          >
             Join Us Now
             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </button>
