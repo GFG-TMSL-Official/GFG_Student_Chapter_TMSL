@@ -16,23 +16,29 @@ const Footer = () => {
     setIsSubmitting(true);
     setMessage('');
 
-    // EmailJS configuration
+    // EmailJS configuration with proper template params
     const templateParams = {
-      email_to: email, // User's email address
+      to_email: email, // Map the entered email to the template's "to_email" field
     };
 
-    emailjs.send('service_m5kgakp', 'template_3y5carn', templateParams, 'yRBonteeeLpKxLi3W')
+    emailjs
+      .send(
+        'service_m5kgakp', // Replace with your actual service ID
+        'template_3y5carn', // Replace with your actual template ID
+        templateParams,
+        'yRBonteeeLpKxLi3W' // Replace with your public API key
+      )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         setMessage('Thanks for Subscribing to our Newsletter!');
-        setEmail('');
+        setEmail(''); // Clear the email input field
       })
       .catch((err) => {
         console.error('FAILED...', err);
         setMessage('Oops! Something went wrong, please try again.');
       })
       .finally(() => {
-        setIsSubmitting(false);
+        setIsSubmitting(false); // Re-enable the button
       });
   };
 
@@ -129,6 +135,7 @@ const Footer = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 className="flex-1 px-4 py-2 rounded-l-md bg-gray-800 border-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+                required
               />
               <button
                 type="submit"
