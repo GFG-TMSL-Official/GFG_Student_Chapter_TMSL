@@ -1,30 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const DarkModeToggle: React.FC = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(
-    () => document.body.classList.contains('dark')
-  );
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
 
-  const toggleDarkMode = () => {
-    if (darkMode) {
-      document.body.classList.remove('dark');
+  // Check if dark mode is already enabled in localStorage or system preferences
+  useEffect(() => {
+    const savedMode = localStorage.getItem('darkMode');
+    if (savedMode) {
+      setIsDarkMode(savedMode === 'true');
     } else {
-      document.body.classList.add('dark');
+      setIsDarkMode(window.matchMedia('(prefers-color-scheme: dark)').matches);
     }
-    setDarkMode(!darkMode);
+  }, []);
+
+  // Toggle dark mode and store preference in localStorage
+  const toggleDarkMode = () => {
+    const newMode = !isDarkMode;
+    setIsDarkMode(newMode);
+    localStorage.setItem('darkMode', newMode.toString());
+    if (newMode) {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
   };
 
   return (
     <button
-      className="dark-mode-toggle"
       onClick={toggleDarkMode}
-      aria-label="Toggle dark mode"
+      className="p-2 rounded-lg bg-primary text-white dark:bg-darkPrimary dark:text-darkText"
     >
-      {darkMode ? (
-        <span className="dark-mode-icon">🌙</span> // Moon icon for dark mode
-      ) : (
-        <span className="dark-mode-icon">☀️</span> // Sun icon for light mode
-      )}
+      {isDarkMode ? 'Light Mode' : 'Dark Mode'}
     </button>
   );
 };
