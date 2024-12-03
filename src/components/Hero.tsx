@@ -3,8 +3,9 @@ import { Code2, ArrowRight } from 'lucide-react';
 import TypewriterEffect from './TypewriterEffect';
 
 const Hero = () => {
-  // Google Form link
+  // Links for buttons
   const googleFormLink = "https://forms.gle/d1buHabjbjqwxdjC8";
+  const learnMoreLink = "https://www.geeksforgeeks.org/geeksforgeeks-student-chapter/";
 
   return (
     <div id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-green-50 pt-16">
@@ -34,7 +35,10 @@ const Hero = () => {
             Join Us Now
             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </button>
-          <button className="px-8 py-3 border-2 border-green-600 text-green-600 rounded-lg hover:bg-green-50 transition-all duration-300">
+          <button
+            onClick={() => window.open(learnMoreLink, "_blank")}
+            className="px-8 py-3 border-2 border-green-600 text-green-600 rounded-lg hover:bg-green-50 transition-all duration-300"
+          >
             Learn More
           </button>
         </div>
