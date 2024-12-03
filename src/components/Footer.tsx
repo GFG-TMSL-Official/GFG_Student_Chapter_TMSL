@@ -1,9 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Code2, Facebook, Instagram, Linkedin, Github, ArrowUp } from 'lucide-react';
+import emailjs from 'emailjs-com';
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [message, setMessage] = useState('');
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setMessage('');
+
+    // EmailJS configuration
+    const templateParams = {
+      email_to: email, // User's email address
+    };
+
+    emailjs.send('service_m5kgakp', 'template_3y5carn', templateParams, 'yRBonteeeLpKxLi3W')
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setMessage('Thanks for Subscribing to our Newsletter!');
+        setEmail('');
+      })
+      .catch((err) => {
+        console.error('FAILED...', err);
+        setMessage('Oops! Something went wrong, please try again.');
+      })
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   };
 
   return (
@@ -92,19 +122,25 @@ const Footer = () => {
             <p className="text-gray-400 mb-4">
               Subscribe to our newsletter for updates on events and opportunities.
             </p>
-            <form className="flex">
+            <form className="flex" onSubmit={handleSubmit}>
               <input
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 className="flex-1 px-4 py-2 rounded-l-md bg-gray-800 border-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
               />
               <button
                 type="submit"
                 className="px-4 py-2 bg-green-600 text-white rounded-r-md hover:bg-green-700 transition-colors"
+                disabled={isSubmitting}
               >
-                Subscribe
+                {isSubmitting ? 'Submitting...' : 'Subscribe'}
               </button>
             </form>
+            {message && (
+              <p className="mt-2 text-sm text-gray-300">{message}</p>
+            )}
           </div>
         </div>
 
