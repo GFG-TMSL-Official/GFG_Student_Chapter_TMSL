@@ -2,22 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Apply global styles to the body */
+/* Global Styles */
 body {
   @apply font-body text-secondary;
 }
 
-/* Dark mode styles */
+/* Dark Mode Global Styles */
 body.dark {
   @apply bg-darkBg text-darkText;
 }
 
-/* Navbar specific styles */
+/* Header (Navbar) */
 header {
-  @apply bg-primary dark:bg-darkPrimary text-white;
+  @apply bg-primary text-white;
+}
+header.dark {
+  @apply dark:bg-darkPrimary dark:text-darkText;
 }
 
-/* Dark mode styles for components */
+/* Buttons */
 button {
   @apply bg-primary text-white rounded-lg;
 }
@@ -31,7 +34,7 @@ button.dark:hover {
   @apply bg-darkText bg-secondary;
 }
 
-/* Additional dark mode utilities */
+/* Links */
 a {
   @apply text-primary hover:text-secondary;
 }
@@ -39,12 +42,15 @@ a.dark {
   @apply text-darkPrimary hover:text-darkText;
 }
 
-/* Styling for the hero section */
+/* Hero Section */
 #home {
-  @apply min-h-screen bg-gray-50 text-gray-800 dark:bg-darkBg dark:text-darkText;
+  @apply min-h-screen bg-gray-50 text-gray-800;
+}
+#home.dark {
+  @apply dark:bg-darkBg dark:text-darkText;
 }
 
-/* Dark mode specific grid and other sections */
+/* Grid Layout */
 .grid {
   @apply grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8;
 }
@@ -52,21 +58,48 @@ a.dark {
   @apply gap-6;
 }
 
-/* Custom Dark mode background for specific components */
+/* Cards or Custom Components */
+.card {
+  @apply bg-white text-gray-800 shadow-md rounded-lg;
+}
+.card.dark {
+  @apply bg-darkCard text-darkText;
+}
+
+/* Forms */
+input, textarea {
+  @apply border border-gray-300 rounded-lg p-2 text-gray-800;
+}
+input.dark, textarea.dark {
+  @apply border-darkText bg-darkBg text-darkText;
+}
+
+/* Footer */
+footer {
+  @apply bg-primary text-white p-4;
+}
+footer.dark {
+  @apply dark:bg-darkPrimary dark:text-darkText;
+}
+
+/* Custom Layer Styles */
 @layer components {
   .dark\:bg-darkCard {
-    background-color: #333; /* Custom dark background color */
+    background-color: #333; /* Custom card background */
   }
   .dark\:text-darkText {
-    color: #f5f5f5; /* Custom text color for dark mode */
+    color: #f5f5f5; /* Custom dark text color */
   }
   .dark\:bg-darkBg {
-    background-color: #121212; /* Dark background color */
+    background-color: #121212; /* Dark global background */
   }
   .dark\:bg-darkPrimary {
-    background-color: #1a202c; /* Dark primary color */
+    background-color: #1a202c; /* Dark primary background */
   }
   .dark\:text-darkPrimary {
-    color: #f5f5f5; /* Dark primary text color */
+    color: #f5f5f5; /* Dark primary text */
   }
 }
+
+/* Additional Styles (if needed) */
+/* Add any specific classes for dark mode styling that aren't covered above */
