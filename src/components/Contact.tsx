@@ -99,7 +99,7 @@ const Contact = () => {
               <div>
                 <h3 className="text-lg font-medium text-gray-900">Email</h3>
                 <a href="mailto:contact@gfgtmsl.com" className="mt-1 text-gray-600 hover:text-green-600">
-                  gfg.tmsl.tech@gmail.com
+                  gfg.tmsl.official@gmail.com
                 </a>
               </div>
             </div>
