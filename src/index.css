@@ -1,7 +1,97 @@
+/* index.css */
+
+/* Import Tailwind base styles, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Global Styles */
 body {
-  @apply font-body text-secondary;
-} 
+  @apply font-body text-secondary bg-gray-50 antialiased;
+}
+
+a {
+  @apply text-primary underline hover:text-primary-dark transition-colors duration-200;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply text-black font-bold leading-tight;
+}
+
+p {
+  @apply text-gray-600 leading-relaxed;
+}
+
+/* Buttons */
+button {
+  @apply bg-primary text-white py-2 px-4 rounded-lg shadow hover:bg-primary-dark transition-all duration-200;
+}
+
+button.outline {
+  @apply bg-transparent text-primary border border-primary py-2 px-4 rounded-lg hover:bg-primary hover:text-white;
+}
+
+/* Custom Utilities */
+.text-secondary {
+  color: #20232a; /* Secondary text color */
+}
+
+.text-primary {
+  color: #0f9d58; /* GFG green */
+}
+
+.text-primary-dark {
+  color: #0c7c47; /* Darker shade of GFG green */
+}
+
+.bg-primary {
+  background-color: #0f9d58; /* GFG green */
+}
+
+.bg-primary-dark {
+  background-color: #0c7c47; /* Darker shade of GFG green */
+}
+
+/* Container */
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Card Components */
+.card {
+  @apply bg-white shadow-lg rounded-lg p-6 border border-gray-200;
+}
+
+.card:hover {
+  @apply shadow-2xl;
+}
+
+/* Navbar */
+.navbar {
+  @apply flex items-center justify-between bg-primary text-white py-4 px-6;
+}
+
+.navbar a {
+  @apply text-white hover:opacity-80 transition-opacity duration-200;
+}
+
+/* Footer */
+.footer {
+  @apply bg-gray-800 text-gray-300 py-6 mt-10 text-center;
+}
+
+.footer a {
+  @apply text-primary hover:text-primary-dark;
+}
+
+/* Forms */
+input, textarea, select {
+  @apply border border-gray-300 rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-primary;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    @apply flex-wrap justify-center;
+  }
+}
