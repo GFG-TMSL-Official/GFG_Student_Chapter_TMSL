@@ -13,7 +13,7 @@ const Gallery = () => {
         </div>
 
         <div className="flex justify-center items-center">
-          <p className="text-2xl text-gray-500 font-medium">No Photos Available</p>
+          <p className="text-2xl text-gray-500 font-medium">No Photos Available as of now...</p>
         </div>
       </div>
     </section>
