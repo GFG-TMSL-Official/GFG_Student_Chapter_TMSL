@@ -17,7 +17,7 @@
   - **Technical Wing** *Co-Head*: [Suprakash Roy](https://wa.me/918777712453)
   - **Events Wing** *Head*: []()
   - **Events Wing** *Co-Head*: []()
-  - **Design & Branding Wing** *Co-Head*: [Saranya Adhikary]()
+  - **Design & Branding Wing** *Head*: [Saranya Adhikary]()
   - **Design & Branding Wing** *Co-Head*: []()
   - **Public Relations & Outreach Wing** *Head*: []()
   - **Public Relations & Outreach Wing** *Co-Head*: []()
