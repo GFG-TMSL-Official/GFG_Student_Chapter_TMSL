@@ -11,8 +11,8 @@
 ## Our Current Administrative Team
   - **Chairperson**: [Arin Karmakar](https://wa.me/919476476209)
   - **Vice-Chairperson**: [Chandan Kumar Raj](https://wa.me/918340606284)
-  - **Technical Wing** Samyak Mishra: []()
-  - **Technical Wing** Suprakash Roy: []()
+  - **Technical Wing** *Head*: [Samyak Mishra]()
+  - **Technical Wing** *Co-Head*: [Suprakash Roy]()
   - **Events Wing** *Head*: []()
   - **Events Wing** *Co-Head*: []()
   - **Design & Branding Wing** Saranya Adhikary: []()
