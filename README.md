@@ -1,4 +1,4 @@
-#GFG WEBSITE
+# GFG WEBSITE
 
 ## Different Wings of GFG TMSL
   - **Technical** Wing
@@ -11,8 +11,8 @@
 ## Our Current Administrative Team
   - **Chairperson**: [Arin Karmakar](https://wa.me/919476476209)
   - **Vice-Chairperson**: [Chandan Kumar Raj](https://wa.me/918340606284)
-  - **Technical Wing** *Head*: [Samyak Mishra]()
-  - **Technical Wing** *Co-Head*: [Suprakash Roy]()
+  - **Technical Wing** *Head*: [Samyak Mishra](https://wa.me/919775948268)
+  - **Technical Wing** *Co-Head*: [Suprakash Roy](https://wa.me/918777712453)
   - **Events Wing** *Head*: []()
   - **Events Wing** *Co-Head*: []()
   - **Design & Branding Wing** Saranya Adhikary: []()
