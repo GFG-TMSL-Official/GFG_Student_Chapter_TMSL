@@ -11,6 +11,7 @@ export default {
         primary: '#0f9d58', // Custom blue color
         secondary: '#20232a', // Custom gray color
         accent: "#34a853",
+        customBg: '#0FFF50'
       },
     },
   },
