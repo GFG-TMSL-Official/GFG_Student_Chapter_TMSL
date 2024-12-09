@@ -25,7 +25,7 @@ const App: React.FC = () => {
     }
 
     return (
-        <div className="bg-gray-50 min-h-screen flex flex-col">
+        <div className="bg-customBg min-h-screen flex flex-col">
             {/* Navbar */}
             <Navbar />
 
