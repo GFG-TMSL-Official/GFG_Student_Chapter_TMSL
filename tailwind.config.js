@@ -12,8 +12,16 @@ module.exports = {
         secondary: '#20232a',
         accent: "#34a853",
         customBg: '#0FFF50',
-        darkBg: '#1a202c',  // Dark background color for dark mode
-        darkText: '#f7fafc',  // Text color for dark mode
+        darkBg: '#121212',  // Darker background for better contrast
+        darkText: '#f7fafc',  // Light text for dark mode
+      },
+      backgroundImage: {
+        'gradient-light': 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+        'gradient-dark': 'linear-gradient(135deg, #2c3e50 0%, #000000 100%)',
+      },
+      boxShadow: {
+        glow: '0 0 15px rgba(52, 168, 83, 0.5)',
+        soft: '0 4px 6px rgba(0, 0, 0, 0.1)',
       },
     },
   },

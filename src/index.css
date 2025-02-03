@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Apply global font and text color */
 body {
-  @apply font-body text-secondary;
-}  
+  @apply font-body text-secondary bg-gray-50 dark:bg-gray-900 transition-colors duration-300;
+}
+
+/* Smooth Dark Mode Transitions */
+html {
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Glassmorphism Effect */
+.glassmorphism {
+  @apply bg-white/30 dark:bg-gray-800/30 backdrop-blur-lg border border-white/20 dark:border-gray-700/20 shadow-lg;
+}
+
+/* Custom Animations */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
+  }
+}
+
+.animated-glow {
+  animation: pulseGlow 2s infinite alternate;
+}
